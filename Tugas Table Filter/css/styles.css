@@ -1,0 +1,27 @@
+table,
+        tr,
+        td {
+            border: 1px solid black;
+            border-spacing: 0px;
+            border-radius: 5px
+        }
+
+        thead {
+            background: rgb(206, 199, 9);
+            border-radius: 20px
+
+        }
+
+        td,
+        th {
+            padding: 15px;
+            
+        }
+
+        tr:nth-child(even) {
+            background: rgb(135, 250, 171)
+        }
+
+        table{
+            text-align: center; border: 2px solid black;border-radius: 5px
+        }

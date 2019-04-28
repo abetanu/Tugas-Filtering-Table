@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <Title>Tugas Table Filter</Title>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+    <!-- Required css-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body background="img/index.jpg">
+    <h2>Anggota Osis</h2>
+    <p>Silahkan filter Table Kebenaran </p>
+    <input id="myInput" type="text" placeholder="Cari....">
+    <br><br>
+
+    <table align="center">
+        <thead>
+            <tr>
+                <td><b>No</b></td>
+                <td><b>Name</b></td>
+                
+                <td><b>Tanggal Lahir</b></td>
+                <td><b>Class</b></td>
+                <td><b>Tipe Class</b></td>
+                <td><b>Jenis Kelamin</b></td>
+                <td><b>Alamat</b></td>
+                <td><b>Kewernagaraan</b></td>
+                <td><b>No.Handphone</b></td>
+                <td><b>Keterangan</b></td>
+            </tr>
+        </thead>
+        <tbody id="myTable">
+            <tr-1>
+                <td>1</td>
+                <td>Sule</td>
+                
+                <td>07/04/1999</td>
+                <td>Otomatisasi Perkantoran</td>
+                <td>A</td>
+                <td>Laki-Laki</td>
+                <td>Jalan H Mursid RT04/RW04 No:36H</td>
+                <td>Jepang</td>
+                <td>08935625283</td>
+                <td>Lulus</td>
+            </tr-1>
+            <tr>
+                <td>2</td>
+                <td>Rizky</td>
+               
+                <td>08/10/1999</td>
+                <td>Teknologi Komunikasi Jaringan</td>
+                <td>C</td>
+                <td>Laki-Laki</td>
+                <td>madura</td>
+                <td>Indonesia</td>
+                <td>087565432283</td>
+                <td>Lulus</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Abe</td>
+                
+                <td>30/07/1999</td>
+                <td>Teknologi Komunikasi Jaringan</td>
+                <td>B</td>
+                <td>Laki-Laki</td>
+                <td>semarang</td>
+                <td>Indonesia</td>
+                <td>087633224523</td>
+                <td>Lulus</td>
+            </tr>
+            <tr>
+            <td>4</td>
+                <td>Oka</td>
+                
+                <td>27/10/1999</td>
+                <td>Akuntansi</td>
+                <td>B</td>
+                <td>Laki-Laki</td>
+                <td>bery</td>
+                <td>Amsterdam</td>
+                <td>089733749222</td>
+                <td>Lulus</td>
+            </tr>
+            <tr>
+            <td>5</td>
+                <td>Rosad</td>
+                
+                <td>12/12/1999</td>
+                <td>Pemasaran</td>
+                <td>A</td>
+                <td>Laki-Laki</td>
+                <td>maskaga</td>
+                <td>Zimbabuwe</td>
+                <td>081653726383</td>
+                <td>Lulus</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Fauzan</td>
+                
+                <td>15/06/2000</td>
+                <td>Multimedia</td>
+                <td>A</td>
+                <td>Laki-Laki</td>
+                <td>brooklyn</td>
+                <td>Amerika Serikat</td>
+                <td>08566353772</td>
+                <td>Lulus</td>
+            </tr>
+            <tr>
+            <td>7</td>
+                <td>Claudia</td>
+                
+                <td>20/09/1999</td>
+                <td>Farmasi</td>
+                <td>B</td>
+                <td>Perempuan</td>
+                <td>Bandung</td>
+                <td>Inggris</td>
+                <td>089374947333</td>
+                <td>Lulus</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
